@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
-const inquirer = require("inquirer");
-const generateMarkdown = require('./utils/generateMarkdown');
+const inquirer = require('inquirer');
+// const generateMarkdown = require('./utils/generateMarkdown');
+console.log("hello");
 
 
 // TODO: Create an array of questions for user input
@@ -48,17 +49,24 @@ inquirer
     message: "What is your email address?",
   },
 ])
-function writeToFile(fileName, data) {
-  fs.writeFile(`${fileName}.md`, data, (err) =>
-  err ? console.log(err) : console.log("README has been generated.")
-  );
-};
+.then((answers) => {
+  const pageAnswers = README.md(answers);
+  fs.writeFile("README.md", pageAnswers, (err) => 
+  err ? console.log(err) : console.log("success")
+);
+})
+// function writeToFile(fileName, data) {
+//   fs.writeFile(`${fileName}.md`, data, (err) =>
+//   err ? console.log(err) : console.log("README has been generated.")
+//   );
+// };
 
-// TODO: Create a function to initialize app
-function init() {
-  let answers = userInput();
-  writeToFile((answers.fileName),(generateMarkdown(answers)));
-}
+// // TODO: Create a function to initialize app
+// function init() {
+//   let answers = userInput();
+//   writeToFile((answers.fileName),(generateMarkdown(answers)));
+// }
 
 // Function call to initialize app
 init();
+console.log("hello");
