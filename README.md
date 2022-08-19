@@ -1,8 +1,8 @@
-# Dana 
+# Dana's README 
 ## License Badge 
-Mozilla
+MIT
 ## Description 
-Creates a readme file 
+This app creates a README file 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,16 +11,16 @@ Creates a readme file
 - [Questions](#questions)
 
 ## Installation
-clonig it
+by cloning the repo
 
 ## Usage
-Answering the questions
+My answering the questions 
 
 ## Contributing 
-Magic and good vibes
+Magic and good vibes 
 
 ## Tests
-Testing testing 
+testing testing 
 
 ## Questions
 If you have questions about this project, you can reach me at dana.golebiewski@gmail.com or my github danagolebiewski.
