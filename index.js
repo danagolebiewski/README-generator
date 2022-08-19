@@ -2,9 +2,10 @@
 const fs = require("fs");
 const inquirer = require('inquirer');
 // const generateMarkdown = require('./utils/generateMarkdown');
-console.log("hello");
 
-
+const readme = ({title, description, instructions, usage, contribution, test, username, email}) =>
+`
+`
 // TODO: Create an array of questions for user input
 inquirer
 .prompt([
