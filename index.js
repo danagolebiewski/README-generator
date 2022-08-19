@@ -84,11 +84,10 @@ inquirer
 ])
 
 .then((answers) => {
-  const pageAnswers = README.md(answers);
+  const pageAnswers = readme(answers);
   fs.writeFile("README.md", pageAnswers, (err) => 
   err ? console.log(err) : console.log("success")
 );
 })
 
 init();
-console.log("hello");
