@@ -4,11 +4,11 @@ const inquirer = require('inquirer');
 // const generateMarkdown = require('./utils/generateMarkdown');
 
 const readme = ({title,license, description, instructions, usage, contribution, test, username, email}) =>
-`# ${data.title} 
+`# ${title} 
 ## License Badge 
-${data.license}
+${license}
 ## Description 
-${data.description}
+${description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -17,19 +17,19 @@ ${data.description}
 - [Questions](#questions)
 
 ## Installation
-${data.instructions}
+${instructions}
 
 ## Usage
-${data.usage}
+${usage}
 
 ## Contributing 
-${data.contribution}
+${contribution}
 
 ## Tests
-${data.tests}
+${tests}
 
 ## Questions
-If you have questions about this project, you can reach me at ${data.email} or my github ${data.username}.
+If you have questions about this project, you can reach me at ${email} or my github ${username}.
 `;
 
 // TODO: Create an array of questions for user input
