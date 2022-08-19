@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require('inquirer');
-// const generateMarkdown = require('./utils/generateMarkdown');
 
 const readme = ({title,license, description, instructions, usage, contribution, test, username, email}) =>
 `# ${title} 
@@ -82,7 +81,8 @@ inquirer
     message: "What is your email address?",
   },
 ])
-
+// created a promise instead of function to initialize app
+// used writeFile to generate the new README with the user input
 .then((answers) => {
   const pageAnswers = readme(answers);
   fs.writeFile("README.md", pageAnswers, (err) => 

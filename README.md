@@ -1,8 +1,8 @@
-# ad 
+# Dana 
 ## License Badge 
 Mozilla
 ## Description 
-asdf
+Creates a readme file 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,16 +11,16 @@ asdf
 - [Questions](#questions)
 
 ## Installation
-asdf
+clonig it
 
 ## Usage
-dfgh
+Answering the questions
 
 ## Contributing 
-fdgh
+Magic and good vibes
 
 ## Tests
-wert
+Testing testing 
 
 ## Questions
-If you have questions about this project, you can reach me at 456 or my github sdg.
+If you have questions about this project, you can reach me at dana.golebiewski@gmail.com or my github danagolebiewski.
