@@ -26,7 +26,7 @@ ${usage}
 ${contribution}
 
 ## Tests
-${tests}
+${test}
 
 ## Questions
 If you have questions about this project, you can reach me at ${email} or my github ${username}.
@@ -89,5 +89,3 @@ inquirer
   err ? console.log(err) : console.log("success")
 );
 })
-
-init();
