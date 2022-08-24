@@ -1,39 +1,11 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
+const path = require("path");
 const inquirer = require('inquirer');
-
-const readme = ({title,license, description, instructions, usage, contribution, test, username, email}) =>
-`# ${title} 
-## License Badge 
-${license}
-## Description 
-${description}
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Tests](#tests) 
-- [Questions](#questions)
-
-## Installation
-${instructions}
-
-## Usage
-${usage}
-
-## Contributing 
-${contribution}
-
-## Tests
-${test}
-
-## Questions
-If you have questions about this project, you can reach me at ${email} or my github ${username}.
-`;
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-inquirer
-.prompt([
+var questions = [
   {
     type: "input",
     name: "title",
@@ -42,7 +14,7 @@ inquirer
   {
     type: "list",
     name: "license",
-    message: "Which license do you want to use?",
+    message: "Which license was used for your project?",
     choices: ["Mozilla", "Apache", "IBM", "MIT"],
   },
   {
@@ -52,7 +24,7 @@ inquirer
   },
   {
     type: "input",
-    name: "instructions",
+    name: "installation",
     message: "How do I install this app?",
   },
   {
@@ -62,12 +34,12 @@ inquirer
   },
   {
     type: "input",
-    name: "contribution",
+    name: "contributer",
     message: "How do I contribute to this application?",
   },
   {
     type: "input",
-    name: "test",
+    name: "tests",
     message: "How do I test this application?",
   },
   {
@@ -79,13 +51,18 @@ inquirer
     type: "input",
     name: "email",
     message: "What is your email address?",
-  },
-])
+  }
+];
 // created a promise instead of function to initialize app
 // used writeFile to generate the new README with the user input
-.then((answers) => {
-  const pageAnswers = readme(answers);
-  fs.writeFile("README.md", pageAnswers, (err) => 
-  err ? console.log(err) : console.log("success")
-);
-})
+function writeToFile(fileName, data) {
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+};
+function init() {
+  inquirer.prompt(questions)
+  .then(answers => {
+    console.log("success");
+    writeToFile("README.md", generateMarkdown({ ...answers}));
+});
+}
+init();

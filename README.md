@@ -1,26 +1,49 @@
-# Dana's README 
-## License Badge 
-MIT
-## Description 
-This app creates a README file 
+# dana
+
+![badge](https://img.shields.io/badge/license-Apache-blue )
+
 ## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Tests](#tests) 
-- [Questions](#questions)
 
-## Installation
-by cloning the repo
+* [Description](#description)
 
-## Usage
-My answering the questions 
+* [Installation](#installation)
 
-## Contributing 
-Magic and good vibes 
+* [Usage](#usage)
 
-## Tests
-testing testing 
+* [License](#license)
 
-## Questions
-If you have questions about this project, you can reach me at dana.golebiewski@gmail.com or my github danagolebiewski.
+* [Contributer](#contributer)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
+ 
+ ## [Description](#table-of-contents)
+ stuff 
+
+ ## [Installation](#table-of-contents)
+ undefined
+
+ ## [Usage](#table-of-contents)
+ uusing
+
+ ## [License](#table-of-contents) 
+    This project is under the following license: 
+    
+ ![badge](https://img.shields.io/badge/license-Apache-blue )
+ 
+ ## [Contributer](#table-of-contents)
+ undefined
+
+ ## [Tests](#table-of-contents)
+ undefined
+
+ ## [Questions](#table-of-contents)
+
+ To see my other work take a look at my public repositories on github:
+
+ Github: [Github Link](undefined)
+
+ To contact me directly please reach out to the following email:
+
+ Email: [dana.golebiewski@gmail.com](mailto:dana.golebiewski@gmail.com)
