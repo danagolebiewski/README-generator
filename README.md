@@ -1,6 +1,6 @@
-# dana
+# Dana's ReadMe
 
-![badge](https://img.shields.io/badge/license-Apache-blue )
+![badge](https://img.shields.io/badge/license-Mozilla-blue )
 
 ## Table of Contents
 
@@ -19,24 +19,24 @@
 * [Questions](#questions)
  
  ## [Description](#table-of-contents)
- stuff 
+ Creates a readme file  
 
  ## [Installation](#table-of-contents)
- undefined
+ by cloning the repo 
 
  ## [Usage](#table-of-contents)
- uusing
+ By answering the questions provided 
 
  ## [License](#table-of-contents) 
     This project is under the following license: 
     
- ![badge](https://img.shields.io/badge/license-Apache-blue )
+ ![badge](https://img.shields.io/badge/license-Mozilla-blue )
  
  ## [Contributer](#table-of-contents)
- undefined
+ fixing bugs 
 
  ## [Tests](#table-of-contents)
- undefined
+ by running node 
 
  ## [Questions](#table-of-contents)
 
